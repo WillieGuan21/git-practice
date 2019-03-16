@@ -1,0 +1,18 @@
+
+.navbar .navbar-brand{
+    font-size: 52px;
+    font-weight: bolder;
+}
+
+.navbar .nav-link{
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 1rem;
+    padding-right: 1rem; 
+
+}
+
+.navbar .nav-item.active{
+    font-weight: bolder;
+    border-left:#d42a2a 4px solid;
+}

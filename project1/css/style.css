@@ -37,6 +37,12 @@ body{
     padding:20px;
     opacity: 0.9;
 }
+
+#findMoreModal .modal-content{
+    background-color:#f2ac34;
+    color: #fff;
+}
+
 .far{
     color:#f2ac34;
 }
@@ -83,5 +89,4 @@ body{
 #author-head-section .fab:hover{
     color: #fff;
 }
-
 

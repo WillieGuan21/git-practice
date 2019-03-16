@@ -20,7 +20,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link">Home</a>
+                        <a href="#home-section" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="#explore-head-section" class="nav-link">Explore</a>
@@ -39,8 +39,8 @@
     <header id="home-section">
         <div class="dark-overlay">
             <div class="home-inner container">
-                <div class="row">
-                    <div class="col-md-8 col-sm-12 d-none d-block">
+                <div class="row m-2">
+                    <div class="col-lg-8 col-md-7 col-sm-12 d-none d-block">
                         <h1 class="display-5">Get more  
                             <strong> travel inspiration, tips</strong> and 
                             <strong> exclusive offers</strong>
@@ -70,7 +70,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-5 d-none d-md-block">
                         <div class="card text-center card-form" style="background-color:#f2ac34">
                             <div class="card-body">
                                 <h3>Sign Up Today</h3>
@@ -93,18 +93,122 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </header>
-
-
-
+    <header id="home-section-rwd-form" class="d-sm-block d-md-none">
+        <div class="container">
+            <div >
+                <div class="card text-center card-form" style="background-color:#f2ac34">
+                    <div class="card-body">
+                        <h3>Sign Up Today</h3>
+                        <p>Please fill out this form to register</p>
+                        <form class="form-group">
+                            <input type="text" class="form-control form-control-md" placeholder="User Name">
+                        </form>
+                        <form class="form-group">
+                            <input type="email" class="form-control form-control-md" placeholder="Email">
+                        </form>
+                        <form class="form-group">
+                            <input type="password" class="form-control form-control-md" placeholder="Password">
+                        </form>
+                        <form class="form-group">
+                            <input type="password" class="form-control form-control-md" placeholder="Confirm Password">
+                        </form>
+                        <input type="submit" value="Submit" class="btn btn-outline-light btn-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- EXPLORE HEAD SECTION -->
+    <section id="explore-head-section" style="background-color: #f4ce90" >
+        <div class="container">
+            <div class="row">
+                <div class="col text-center py-5">
+                    <h1 class="display-5">Explore</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores facere, deserunt aliquid suscipit sint quia non repellendus at repudiandae commodi!</p>
+                    <button class="btn btn-outline-secondary" data-toggle="modal" data-target="#findMoreModal">Find Out More Story</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FIND MORE MODAL -->
+    <div id="findMoreModal" class="modal fade text-dark">
+        <div class="modal-dialog">
+            <div class="modal-content"   >
+                <div class="modal-header">
+                    <h5 class="modal-title">Subscribe E-book Now</h5>
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-md btn-warning">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- EXPLORE SECTION -->
+    <section id="explore-section" class="text-muted py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="img/river.jpg" alt="" class="img-fluid mb-3 rounded-circle">
+                </div>
+                <div class="col-lg-6">
+                    <h3>Explore Story</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium ad eius vitae, voluptate repellendus repellat. Veniam quaerat ipsum eius? Quasi velit cumque debitis provident rerum fuga voluptates fugit a itaque!</p>
+                    <div class="d-flex">
+                        <div class="p-4 align-self-center">
+                            <i class="far fa-check-circle fa-2x"></i>
+                        </div>
+                        <div class="p-2 align-self-center">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi, ipsa!
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="p-4 aligh-self-center">
+                            <i class="far fa-check-circle fa-2x"></i>
+                        </div>
+                        <div class="p-2 align-self-center">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo doloremque distinctio, neque autem accusantium animi aperiam veritatis a.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer id="main-footer" class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center py-4">
+                    <p>Copyreight &copy; <span id="year"></span> Lonelyplanet | <a href="https://www.lonelyplanet.com/legal/privacy-policy/" target="_blank"><ins>Privacy</ins></a></p>
+                    <a href="https://www.lonelyplanet.com/contact" target="_blank"><ins>Contact us</ins></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
         //get the current year for the copyright
-        $('#year').text(new Date.getFullYear());
+        $('#year').text(new Date().getFullYear());
     </script>
 </body>
 </html>

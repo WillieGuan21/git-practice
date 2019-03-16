@@ -10,10 +10,10 @@ body{
 
 #home-section{
     background:url(../img/turkey.jpg);
-    background-repeat: no-repeat;
+    background-repeat: no-repeat ;
     background-size: cover;
     background-attachment: fixed;
-    min-height: 800px;
+    min-height: 700px;
 }
 
 #home-section .dark-overlay{
@@ -21,18 +21,67 @@ body{
     top:0;
     left:0;
     width:100%;
-    min-height: 800px;
+    min-height: 700px;
     background: rgba(0,0,0,0.7);
 }
 
 #home-section .home-inner{
-    padding-top:120px;
+    padding-top:130px;
 }
 
 #home-section .card-form{
     opacity: 0.9;
+    margin-top: 20px;
 }
-
-#home-section .far{
+#home-section-rwd-form{
+    padding:20px;
+    opacity: 0.9;
+}
+.far{
     color:#f2ac34;
 }
+
+.info-header{
+    width :60%;
+    margin:auto;
+    margin-bottom:20px;
+
+}
+
+#accordion .card-header{
+    color: #6C757D;
+}
+
+#accordion .card-body{
+    color: #6C757D;
+}
+
+#accordion .fa{
+    color:#f2ac34;
+}
+
+#author-head-section img {
+    margin-top: -40px;
+    margin-bottom: 10px;
+}
+
+#author-head-section .card {
+    color: #6C757D ;
+    margin-top: 40px; 
+    margin-bottom: 40px; 
+}
+
+#author-head-section .card:hover {
+    background-color: #f2ac34;
+    color: #fff;
+}
+
+#author-head-section .fab{
+    color: #647A95;
+}
+
+#author-head-section .fab:hover{
+    color: #fff;
+}
+
+

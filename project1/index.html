@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
     <title>LonelyPlanet</title>
 </head>
-<body>
-    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color:#24243c;">
+<body data-spy="scroll" data-target="#main-nav" id="home">
+    <nav id="main-nav" class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color:#24243c;">
         <div class="container">
             <a href="index.html" class="navbar-brand">LonelyPlanet</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -26,10 +26,10 @@
                         <a href="#explore-head-section" class="nav-link">Explore</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#create-head-section" class="nav-link">Create</a>
-                    </li>
+                            <a href="#share-head-section" class="nav-link">Author</a>
+                        </li>
                     <li class="nav-item">
-                        <a href="#share-head-section" class="nav-link">Share</a>
+                        <a href="#mission-head-section" class="nav-link">Mission</a>
                     </li>
                 </ul>
             </div>
@@ -191,11 +191,69 @@
             </div>
         </div>
     </section>
+     <!-- MISSION HEAD SECTION -->
+    <section id="mission-head-section" style="background-color: #647A95" >
+        <div class="container">
+            <div class="row">
+                <div class="col text-center p-5">
+                    <div class="info-header">
+                        <h1 class="display-5">Our Mission</h1>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores facere, deserunt aliquid suscipit sint quia non repellendus at repudiandae commodi!</p>
+                    </div>
+                    <!-- ACCORDION -->
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0">
+                                    <div href='#collapse1' data-toggle="collapse" data-parent="#accordion">
+                                        <i class="fa fa-chevron-circle-down"></i>  Open Your Mind
+                                    </div>
+                                </h5>
+                            </div>
+                            <div id="collapse1" class="collapse show">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum inventore nesciunt, doloremque, modi similique ea tempore laborum culpa nisi nihil distinctio sint eaque. Soluta perferendis labore impedit illo incidunt, tempore expedita deserunt molestiae nam rem!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0">
+                                    <div href='#collapse2' data-toggle="collapse" data-parent="#accordion">
+                                        <i class="fa fa-chevron-circle-down"></i> Inspire Knowledge
+                                    </div>
+                                </h5>
+                            </div>
+                            <div id="collapse2" class="collapse">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum inventore nesciunt, doloremque, modi similique ea tempore laborum culpa nisi nihil distinctio sint eaque. Soluta perferendis labore impedit illo incidunt, tempore expedita deserunt molestiae nam rem!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0">
+                                    <div href='#collapse3' data-toggle="collapse" data-parent="#accordion">
+                                        <i class="fa fa-chevron-circle-down"></i> Encourage to explore
+                                    </div>
+                                </h5>
+                            </div>
+                            <div id="collapse3" class="collapse">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum inventore nesciunt, doloremque, modi similique ea tempore laborum culpa nisi nihil distinctio sint eaque. Soluta perferendis labore impedit illo incidunt, tempore expedita deserunt molestiae nam rem!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- FOOTER -->
     <footer id="main-footer" class="bg-dark">
         <div class="container">
             <div class="row">
-                <div class="col text-center py-4">
+                <div class="col text-center py-4 ">
                     <p>Copyreight &copy; <span id="year"></span> Lonelyplanet | <a href="https://www.lonelyplanet.com/legal/privacy-policy/" target="_blank"><ins>Privacy</ins></a></p>
                     <a href="https://www.lonelyplanet.com/contact" target="_blank"><ins>Contact us</ins></a>
                 </div>
@@ -209,6 +267,20 @@
     <script>
         //get the current year for the copyright
         $('#year').text(new Date().getFullYear());
+        //Init Scrollspy
+        $('body').scrollspy({ target:'#mail-nav'});
+        //Smooth Scrolling
+        $('#main-nav a').on('click',function(event){
+            if(this.hash !==""){
+                event.preventDefault();
+                const hash = this.hash;
+                $('html,body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+                    window.location.hash = hash;
+                })
+            }
+        })
     </script>
 </body>
 </html>

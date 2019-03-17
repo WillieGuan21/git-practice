@@ -16,3 +16,40 @@
     font-weight: bolder;
     border-left:#d42a2a 4px solid;
 }
+
+.carousel-item{
+    height:450px;
+}
+
+.carousel-image-1{
+    background: url("../img/carousel-img-1.jpg");
+    background-size: cover;
+    /* https://www.moma.org/calendar/events/5033?locale=zh */
+}
+
+
+.carousel-image-2{
+    background: url("../img/carousel-img-2.jpg");
+    background-size: cover;
+    /* https://www.moma.org/calendar/exhibitions/962 */
+}
+
+.carousel-image-3{
+    background: url("../img/carousel-img-3.jpg");
+    background-size: cover;
+    /* https://www.moma.org/calendar/events/5261?locale=zh */
+}
+.carousel-caption{
+    margin-bottom: 30px;
+    
+}
+
+.btn-nude{
+    color: #fff;
+    background-color:#d42a2a;
+    
+}
+.btn-nude:hover {
+    color: #fff;
+    border-color: #fff; 
+}

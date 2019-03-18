@@ -44,28 +44,7 @@
     
 }
 
-@media(max-width: 768px){
-    #myCarousel .display-4{
-        font-size: 2.5rem;
-        font-weight: 300;
-        line-height: 1;
-    }
-    #myCarousel.lead{
-        font-size: 1.25rem;
-        font-weight: 300; 
-    }
-}
-@media(max-width: 576px){
-    #myCarousel .display-4{
-        font-size: 1.8rem;
-        font-weight: 300;
-        line-height: 1;
-    }
-    #myCarousel .lead{
-        font-size: 3px;
-        font-weight: 200; 
-    }
-}
+
 
 .btn-nude{
     color: #fff;
@@ -96,11 +75,11 @@
     left:0;
     width:100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.3)
+    background-color: rgba(0,,0, 0.8)
 }
 
 #video-play a{
-    color:#d42a2a;
+    color:#fff;
 }
 
 #video-play h2{
@@ -117,6 +96,8 @@
 
 
 #location-heading{
+    background-color: #d42a2a;
+    color: #fff;
     /* padding-top: 50px; */
     position: relative; 
     text-align:center;
@@ -141,5 +122,58 @@
     min-height: rem;
 }
 
+#newsletter{
+    position: relative; 
+    text-align:center;
+    background-color: #140404;
+    color: #fff;
+}
 
+#newsletter input{
+    text-align: center;
+    width: 50%;
+    height: 80px;
+    font-size: 28px;
+    padding: 10px;
+    border: none;
+    background-color: #140404;
+    color: #fff;
+    /* font-size: 30px; */
+    border-bottom:#fff 3px solid;
+}
+#newsletter ::-webkit-input-placeholder{
+    color: #fff;
+}
+#newsletter a{
+    color:#fff;
+}
+
+
+@media(max-width: 768px){
+    #myCarousel .display-4{
+        font-size: 2.5rem;
+        font-weight: 300;
+        line-height: 1;
+    }
+    #myCarousel.lead{
+        font-size: 1.25rem;
+        font-weight: 300; 
+    }
+    #newsletter input{
+        width: 80%;
+        height: 50px;
+        font-size: 25px;
+    }
+}
+@media(max-width: 576px){
+    #myCarousel .display-4{
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 1;
+    }
+    #myCarousel .lead{
+        font-size: 3px;
+        font-weight: 200; 
+    }
+}
 

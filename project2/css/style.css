@@ -149,6 +149,30 @@
 }
 
 
+#page-header{
+    height:500px;
+    background: url("../img/heading-img.jpg");
+    background-position: 0 -360;
+    background-attachment: fixed;
+    color: #fff;
+    border-bottom: 10px #d42a2a solid;
+    padding-top: 50px
+}
+#page-header .intro{
+    font-size: 25px;
+}
+#about .card-red{
+    margin: 10px;
+    background-color: #d42a2a;
+    color: #fff;
+}
+
+#about .card-black{
+    margin: 10px;
+    background-color:#140404;
+    color: #fff;
+}
+
 @media(max-width: 768px){
     #myCarousel .display-4{
         font-size: 2.5rem;
@@ -164,6 +188,9 @@
         height: 50px;
         font-size: 25px;
     }
+    #page-header .intro{
+        font-size: 20px;
+    }
 }
 @media(max-width: 576px){
     #myCarousel .display-4{
@@ -175,5 +202,9 @@
         font-size: 3px;
         font-weight: 200; 
     }
+    #page-header .intro{
+        font-size: 16px;
+    }
 }
+
 

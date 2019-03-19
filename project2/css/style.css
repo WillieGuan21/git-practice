@@ -163,14 +163,6 @@
     border-bottom: 10px #d42a2a solid;
     padding-top: 50px
 }
-.white-overlay{
-    position: relative;
-    top:0;
-    left:0;
-    width:100%;
-    height: 100%;
-    background-color: rgba(255,255,255, 0.6)
-}
 
 #page-header .intro{
     font-size: 25px;
@@ -192,6 +184,7 @@
 }
 
 #blog-header{
+    position: relative;
     height:150px;
     background: url("../img/heading-img.jpg");
     background-position: 0 -360;
@@ -199,7 +192,12 @@
     color: #fff;
     border-bottom: 10px #d42a2a solid;
     padding-top: 50px
+    /* color: #fff;
+    border-bottom: 10px #d42a2a solid;
+    padding-top: 50px */
 }
+
+
 #blog .text-overflow{
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -208,11 +206,23 @@
 }
 
 #authors-heading{
+    position: relative;
     height:220px;
+    background: url("../img/authors-heading-img.jpg");
+    background-position: 0 -360;
+    background-attachment: fixed;
     background-color: #56332e;
     color: #fff;
     text-align: center;
     padding: 50px;
+}
+.brown-overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background-color: rgba(86,51,46, 0.9)
 }
 #authors-img{
     padding: 50px;
@@ -227,6 +237,25 @@
     width: 50%;
     padding: 10px;
     text-align:center;
+}
+
+#collection-header{
+    position: relative;
+    height:250px;
+    background: url("../img/collection-header-img.jpg");
+    background-position: 0 0;
+    background-attachment: fixed;
+    color: #fff;
+    border-bottom: 10px #140404 solid;
+    padding-top: 50px
+}
+.red-overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.5)
 }
 
 @media(max-width: 768px){

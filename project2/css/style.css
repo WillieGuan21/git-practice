@@ -191,6 +191,44 @@
     color: #fff;
 }
 
+#blog-header{
+    height:150px;
+    background: url("../img/heading-img.jpg");
+    background-position: 0 -360;
+    background-attachment: fixed;
+    color: #fff;
+    border-bottom: 10px #d42a2a solid;
+    padding-top: 50px
+}
+#blog .text-overflow{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8;
+    overflow: hidden;
+}
+
+#authors-heading{
+    height:220px;
+    background-color: #56332e;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+}
+#authors-img{
+    padding: 50px;
+}
+#authors-img .helf-img{
+    width: 50%;
+    padding: 30px;
+    text-align:center;
+}
+
+#authors-img .helf-text{
+    width: 50%;
+    padding: 10px;
+    text-align:center;
+}
+
 @media(max-width: 768px){
     #myCarousel .display-4{
         font-size: 2.5rem;
@@ -208,6 +246,17 @@
     }
     #page-header .intro{
         font-size: 20px;
+    }
+    #authors-img .helf-img{
+        width: 50%;
+        padding: 10px;
+        text-align:center;
+    }
+    
+    #authors-img .helf-text{
+        width: 50%;
+        padding: 10px;
+        text-align:center;
     }
 }
 @media(max-width: 576px){

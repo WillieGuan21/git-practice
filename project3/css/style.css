@@ -25,7 +25,6 @@ body{
 #main-header .active{
     font-weight:bolder;
     font-size: 24px;
-    
 }
 #main-header .head-item :hover{
     padding-bottom:10px; 
@@ -53,6 +52,14 @@ body{
     left: 50%;
     /* opacity: 0.5; */
 }
+/* .show-page section{
+    height: 0;
+    overflow: hidden;
+}
+.show-page section:target{
+    height: 100%;
+} */
+
 #slogan-section .container{
     padding: 30px;
     color: white;

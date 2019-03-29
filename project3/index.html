@@ -11,6 +11,7 @@
 </head>
 <body>
     <!-- HEADER SECTION -->
+
     <div id="main-header">
         <div class="container">
             <div class="row">
@@ -20,21 +21,18 @@
             </div>
         </div>
         <div class="d-flex justify-content-center head-group align-self-end">
-            <div class="head-item align-self-center">
-                <a href="#" class="active">Intro</a>
-                <!-- <a class="active">Home</a> -->
+            <div class="head-item head-item1 align-self-center active" data-toggle="collapse" data-target="#intro-page">
+                <span><a href="#">Intro</a></span>
+                <!-- <a href="#">Intro</a> -->
             </div>
-            <div class="head-item align-self-center">
-                <a href="#">Education</a>
-                <!-- <span >Product</span> -->
+            <div class="head-item head-item2 align-self-center" data-toggle="collapse" data-target="#education-page">
+                <span><a href="#">Education</a></span>
             </div>
-            <div class="head-item align-self-center">
-                <a href="#">Projects</a>
-                <!-- <span >Press</span> -->
+            <div class="head-item head-item3 align-self-center" data-toggle="collapse" data-target="#projects-page">
+                <span><a href="#">Projects</a></span>
             </div>
-            <div class="head-item align-self-center">
-                <a href="#">Experience</a>
-                <!-- <span >Contact</span> -->
+            <div class="head-item head-item4 align-self-center" data-toggle="collapse" data-target="#intro-page">
+                <span><a href="#">Notes</a></span>
             </div>
         </div>
         <div class="bg d-flex">
@@ -43,11 +41,8 @@
         </div>
     </div>
     
-    
-    
-    
     <!-- INTRO PAGE -->
-    <section id="intro-page" class="d-none">
+    <section id="intro-page" class="collapse show">
         <!-- SLOGAN SECTION -->
         <div id="slogan-section">
             <div class="container">
@@ -228,11 +223,9 @@
             </div>
         </div>
     </section>
-    
-
 
     <!-- EDUCATION PAGE -->
-    <section id="education-page" class="d-none">
+    <section id="education-page" class="collapse" >
         <div id="education-header">
             <div class="bg d-flex">
                 <div class="bg-left"></div>
@@ -385,8 +378,11 @@
             </div>
         </div>
     </section>
+
+
+
     <!-- PROJECTS PAGE -->
-    <section id="projects-page">
+    <section id="projects-page" class="collapse">
         <div id="projects-header">
             <div class="bg d-flex">
                 <div class="bg-left"></div>
@@ -464,6 +460,7 @@
     </section>
     
     
+    
     <!-- EMIAL SECTION -->
     <!-- <div id="email-section">
         <div class="container">
@@ -498,6 +495,27 @@
     <script>
         //get the current year for the copyright
         $('#year').text(new Date().getFullYear());
+        
+        $('.head-item').click(function () {
+            $('.collapse').collapse('hide');
+        });
+
+        $('.head-item').click(function () {
+            $('.head-item').removeClass("active");
+        });
+        $('.head-item1').click(function () {
+            $('.head-item1').addClass("active");
+        });
+        $('.head-item2').click(function () {
+            $('.head-item2').addClass("active");
+        });
+        $('.head-item3').click(function () {
+            $('.head-item3').addClass("active");
+            
+        });
+        $('.head-item4').click(function () {
+            $('.head-item4').addClass("active");
+        });
 
     </script>
 </body>

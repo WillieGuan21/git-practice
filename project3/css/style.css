@@ -374,27 +374,34 @@ hr{
     margin-bottom: 20px; 
 }
 .piece-header {
-    width: 100%;
+    /* width: 100%; */
     padding: 10px;              
     display: flex;
     align-items: center;
+    /* justify-content: space-between; */
 }
 .piece-header .school{
     font-size: 24px;
     font-weight: bolder;
     color: #56332e;
-    float:left;
-    width: 50%;
+    flex: 1;
+    /* float:left; */
+    /* width:1000px; */
+    /* width: 50%; */
     text-align: left;
     padding-bottom: 5px;
+    /* background-color: #F0780D; */
 }
 .piece-header .period{
     color: #9a7476;
-    float:right;
-    width: 50%;
+    flex: 1;
+    /* float:right; */
+    /* width:600px; */
+    /* width: 50%; */
     text-align: right;
     font-size: 16px;
     font-weight: bolder;
+    /* background-color: #98E3FC; */
 }
 ul{
     list-style:none;
@@ -593,12 +600,13 @@ ul{
 }
 #notes-section .piece-photo{
     background-size: 300px;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem; 
     background-position: 50% 50%;
     background-attachment: scroll;
     width: 300px;
     height: 200px;
-    border-top-left-radius: calc(0.25rem - 1px);
-    border-top-right-radius: calc(0.25rem - 1px); 
+    
     
 }
 #piece-photo1{
